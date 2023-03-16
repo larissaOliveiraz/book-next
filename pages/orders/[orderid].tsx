@@ -8,6 +8,7 @@ import { CreditCard, MapPin, Newspaper } from "lucide-react";
 import { GetServerSideProps } from "next";
 import { getServerSession } from "next-auth";
 import { useSession } from "next-auth/react";
+import Head from "next/head";
 import React, { useContext, useEffect, useState } from "react";
 import styles from "../../styles/OrderInfo.module.scss";
 import { authOptions } from "../api/auth/[...nextauth]";
@@ -43,6 +44,9 @@ const OrderInfo = ({ orderid }: OrderInfoProps) => {
 
    return (
       <div className={styles.container}>
+         <Head>
+            <title>BookNext | {`Order - ${orderid.slice(0, 5)}`}</title>
+         </Head>
          {order && (
             <>
                <MobileHeader

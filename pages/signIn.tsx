@@ -4,6 +4,7 @@ import { signIn } from "next-auth/react";
 import * as zod from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import styles from "../styles/SignIn.module.scss";
+import Head from "next/head";
 
 const signInSchema = zod.object({
    name: zod.string().min(1, { message: "Name is required" }),
@@ -45,6 +46,9 @@ const SignIn = () => {
 
    return (
       <div className={styles.container}>
+         <Head>
+            <title>BookNext | SignIn</title>
+         </Head>
          <div className={styles.contentContainer}>
             <form onSubmit={handleSubmit(handleSignIn)} action="">
                <FormProvider {...signInForm}>

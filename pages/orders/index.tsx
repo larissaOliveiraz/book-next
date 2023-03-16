@@ -5,6 +5,7 @@ import { useFormatter } from "@/hooks/useFormatter";
 import { Order } from "@/types/Order";
 import { GetServerSideProps } from "next";
 import { getSession, useSession } from "next-auth/react";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 import styles from "../../styles/Orders.module.scss";
@@ -39,6 +40,9 @@ const Orders = () => {
 
    return (
       <div className={styles.container}>
+         <Head>
+            <title>BookNext | Orders</title>
+         </Head>
          <header>
             <div className={styles.mobileHeader}>
                <MobileHeader title="Orders" returnLink="/" />

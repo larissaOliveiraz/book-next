@@ -18,13 +18,13 @@ export const Banner = () => {
             className={styles.swipper}
          >
             <SwiperSlide className={styles.swiperSlide}>
-               <Image src={bookBgImg1} alt="" />
+               <Image src={bookBgImg1} alt="" priority />
             </SwiperSlide>
             <SwiperSlide className={styles.swiperSlide}>
-               <Image src={bookBgImg2} alt="" />
+               <Image src={bookBgImg2} alt="" priority />
             </SwiperSlide>
             <SwiperSlide className={styles.swiperSlide}>
-               <Image src={bookBgImg3} alt="" />
+               <Image src={bookBgImg3} alt="" priority />
             </SwiperSlide>
          </Swiper>
       </div>

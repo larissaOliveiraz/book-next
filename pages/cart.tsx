@@ -9,6 +9,7 @@ import { CartCookie } from "@/types/CartCookie";
 import { CartItem as CartItemType } from "@/types/CartItem";
 import { getCookie, setCookie } from "cookies-next";
 import { GetServerSideProps } from "next";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "../styles/Cart.module.scss";
@@ -68,6 +69,9 @@ const Cart = ({ cart }: CartProps) => {
 
    return (
       <div className={styles.container}>
+         <Head>
+            <title>BookNext | Cart</title>
+         </Head>
          <MobileHeader returnLink="/" title="Carrinho" />
          <header>
             <Header />

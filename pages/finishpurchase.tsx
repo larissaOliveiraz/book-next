@@ -19,6 +19,7 @@ import { faker } from "@faker-js/faker";
 import { useSession } from "next-auth/react";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]";
+import Head from "next/head";
 
 const FinishPurchase = ({ cart }: FinishPurchaseProps) => {
    const { getOrders } = useContext(OrderContext);
@@ -91,6 +92,9 @@ const FinishPurchase = ({ cart }: FinishPurchaseProps) => {
 
    return (
       <div className={styles.container}>
+         <Head>
+            <title>BookNext | Finish</title>
+         </Head>
          <MobileHeader returnLink="/" title="Payment" />
          <header>
             <Header />

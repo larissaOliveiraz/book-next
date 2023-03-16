@@ -19,7 +19,7 @@ export const BookCategory = ({ title, books }: Props) => {
                   href={`/books/${book.id}`}
                   className={styles.bookItem}
                >
-                  <Image src={book.cover} alt="" />
+                  <Image src={book.cover} alt="" priority />
                </Link>
             ))}
          </div>

@@ -34,7 +34,7 @@ const Home = ({ books }: HomeProps) => {
    return (
       <>
          <Head>
-            <title>Book Ecommerce</title>
+            <title>BookNext | Home</title>
             <meta name="description" content="Book ecommerce app" />
             <meta
                name="viewport"

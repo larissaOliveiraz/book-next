@@ -13,6 +13,7 @@ import { useRouter } from "next/router";
 import { getCookie, hasCookie, setCookie } from "cookies-next";
 import { CartCookie } from "@/types/CartCookie";
 import Image from "next/image";
+import Head from "next/head";
 
 const BookInfo = ({ book }: BookInfoProps) => {
    const [openDesc, setOpenDesc] = useState(false);
@@ -55,6 +56,9 @@ const BookInfo = ({ book }: BookInfoProps) => {
 
    return (
       <div className={styles.container}>
+         <Head>
+            <title>BookNext | {book.title}</title>
+         </Head>
          <div className={styles.headerArea}>
             <MobileHeader title="Book" returnLink="/" invert />
          </div>
