@@ -1,0 +1,127 @@
+.container {
+   width: 100%;
+   margin: 0 auto;
+   background-color: var(--white);
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 9999;
+
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   align-items: center;
+   padding: 1rem 1.5rem;
+
+   @media (min-width: 768px) {
+      width: 80%;
+   }
+}
+
+.logoArea {
+   img {
+      width: 12rem;
+      height: auto;
+   }
+}
+
+.navArea {
+   display: none;
+   align-items: center;
+   justify-content: center;
+   gap: 0.25rem;
+
+   font-size: 1rem;
+   font-weight: 500;
+
+   a {
+      border: 2px solid transparent;
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.75rem;
+
+      &:hover {
+         opacity: 0.8;
+      }
+
+      &.active {
+         border: 2px solid var(--main);
+      }
+   }
+
+   @media (min-width: 1024px) {
+      display: flex;
+   }
+}
+
+.menuArea {
+   display: flex;
+   justify-content: flex-end;
+
+   .mobileMenu {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.1rem;
+   }
+   .desktopMenu {
+      display: none;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+         font-size: 1.25rem;
+         font-weight: 500;
+         margin-right: -0.5rem;
+      }
+
+      .bag {
+         transition: all ease 0.2s;
+         cursor: pointer;
+         &:hover {
+            transform: scale(1.1);
+         }
+      }
+   }
+
+   @media (min-width: 1024px) {
+      .mobileMenu {
+         display: none;
+      }
+      .desktopMenu {
+         display: flex;
+      }
+   }
+}
+
+.loggedArea {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+
+   background-color: var(--lightgray);
+   border-radius: 0.5rem;
+   padding: 0 0.25rem;
+
+   button {
+      border: 0;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      background-color: var(--main);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: all ease 0.2s;
+
+      &:hover {
+         opacity: 0.9;
+      }
+   }
+}
+
+@media (min-width: 1024px) {
+   .container {
+      padding: 0.5rem 1.5rem;
+   }
+}

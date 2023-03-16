@@ -1,0 +1,146 @@
+.container {
+   width: 100%;
+   margin: 0 auto;
+   header {
+      display: none;
+   }
+}
+
+.itemsQt {
+   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+   padding: 1.25rem 0;
+   margin: 0 1.5rem;
+
+   font-size: 1.1rem;
+   font-weight: 500;
+}
+
+.cartItemsArea {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   margin: 0 1.5rem;
+}
+
+.shipping {
+   margin: 2rem 1.5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+
+   p {
+      font-size: 1.25rem;
+      font-weight: 500;
+   }
+   span {
+      font-size: 1.25rem;
+   }
+}
+
+.shippingForm {
+   display: block;
+
+   div {
+      margin-top: 0.75rem;
+   }
+}
+
+.shippingInfo {
+   padding: 1rem;
+   background-color: #ccc;
+   border-radius: 0.5rem;
+   font-weight: 600;
+   font-size: 1rem;
+   margin-top: 0.5rem;
+
+   .shippingDate {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 1rem;
+   }
+
+   .shippingPrice {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+
+.orderTitle {
+   margin: 1rem 1.5rem;
+   font-size: 1.25rem;
+   font-weight: 500;
+}
+
+.orderInfo {
+   margin: 0 1.5rem;
+   padding: 2.5rem 1.75rem;
+   background-color: var(--lightgray);
+
+   border-radius: 0.5rem;
+   margin-bottom: 2rem;
+}
+
+.orderItem {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   margin-bottom: 1rem;
+
+   p {
+      font-weight: 500;
+      font-size: 1.25rem;
+   }
+
+   span {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--main);
+   }
+}
+
+.orderTotal {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 1.5rem;
+   font-weight: 600;
+
+   border-top: 2px solid var(--gray);
+   padding-top: 2rem;
+   margin-top: 2rem;
+}
+
+.orderTotalPrice {
+   font-size: 2rem;
+}
+
+.finishBtnArea {
+   margin: 2rem 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   .container {
+      width: 80%;
+   }
+}
+
+@media (min-width: 1024px) {
+   .container {
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 8rem;
+      header {
+         display: block;
+      }
+   }
+   .shippingForm {
+      display: flex;
+      gap: 1rem;
+   }
+}

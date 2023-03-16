@@ -1,0 +1,111 @@
+.container {
+   width: 100%;
+   margin: 0 auto;
+}
+
+.mobileHeader {
+   display: block;
+}
+
+.desktopHeader {
+   display: none;
+}
+
+.contentContainer {
+   margin: 0 1.5rem;
+}
+
+.ordersQt {
+   font-weight: 500;
+   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+   padding-bottom: 1rem;
+   margin-bottom: 1rem;
+}
+
+.ordersArea {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 1rem;
+}
+
+.orderItem {
+   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+   padding: 0 1.5rem;
+   padding-bottom: 1rem;
+
+   cursor: pointer;
+}
+
+.orderHeader {
+   margin-bottom: 1.75rem;
+}
+
+.orderTitle {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   p {
+      font-size: 1.25rem;
+      font-weight: 600;
+   }
+}
+
+.orderStatus {
+   display: inline-block;
+   background-color: var(--main);
+   color: var(--white);
+   font-weight: 500;
+
+   border-radius: 0.25rem;
+   padding: 0.5rem 0.75rem;
+   margin-top: 0.25rem;
+}
+
+.orderBottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   p {
+      font-weight: 600;
+      font-size: 1.35rem;
+      color: var(--main);
+   }
+}
+
+.orderDetailBtn {
+   border: 2px solid var(--main);
+   border-radius: 0.25rem;
+   font-weight: 500;
+
+   padding: 0.5rem 0.75rem;
+   transition: all ease 0.2s;
+
+   &:hover {
+      background-color: var(--main);
+      color: var(--white);
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   .container {
+      width: 80%;
+   }
+}
+
+@media (min-width: 1024px) {
+   .container {
+      width: 50%;
+      margin-top: 8rem;
+   }
+
+   .mobileHeader {
+      display: none;
+   }
+
+   .desktopHeader {
+      display: flex;
+   }
+}

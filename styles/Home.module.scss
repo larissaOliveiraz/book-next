@@ -1,0 +1,151 @@
+.container {
+   width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+
+   padding: 1.5rem;
+
+   header {
+      z-index: 999;
+   }
+
+   @media (min-width: 768px) and (max-width: 1024px) {
+      width: 80%;
+   }
+
+   @media (min-width: 1024px) {
+      width: 80%;
+   }
+}
+
+.mobileSearch {
+   display: block;
+
+   @media (min-width: 1024px) {
+      display: none;
+   }
+}
+
+.topIntro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   height: fit-content;
+   margin-top: 4rem;
+
+   @media (min-width: 1024px) {
+      height: fit-content;
+      margin-top: 6rem;
+      border: 0;
+      padding-bottom: 0;
+   }
+}
+
+.bannerContainer {
+   width: calc(100vw - 3rem);
+}
+
+.topIntroText {
+   position: relative;
+   top: -10rem;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+
+   height: 0;
+   z-index: 10;
+   color: var(--white);
+
+   h2 {
+      width: 95%;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 5px #000;
+   }
+
+   p {
+      width: 15rem;
+      font-size: 1.25rem;
+   }
+}
+
+.searchedBooksContainer {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 0.75rem;
+
+   margin-bottom: 10rem;
+}
+
+.searchItem {
+   width: 100%;
+   height: 100%;
+   border-radius: 0.5rem;
+   overflow: hidden;
+
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
+.bookCatalogue {
+   display: block;
+   padding: 1rem 0;
+   padding-bottom: 5rem;
+}
+
+.searchInput {
+   display: flex;
+   margin-top: -2.75rem;
+   margin-bottom: 2rem;
+   width: 100%;
+
+   @media (min-width: 1024px) {
+      display: flex;
+   }
+}
+
+.bookCategories {
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+   .searchedBooksContainer {
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   .bannerContainer {
+      width: 100%;
+   }
+   .searchedBooksContainer {
+      grid-template-columns: repeat(6, 1fr);
+   }
+}
+
+@media (min-width: 1024px) {
+   .container {
+      width: 82%;
+   }
+   .bannerContainer {
+      width: 100%;
+      padding: 0;
+      margin-top: -1rem;
+   }
+   .topIntroText {
+      top: -13rem;
+
+      h2 {
+         font-size: 2.75rem;
+      }
+   }
+   .searchedBooksContainer {
+      grid-template-columns: repeat(8, 1fr);
+   }
+}

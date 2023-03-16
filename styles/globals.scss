@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+//283d3b
+//14281d
+//263d42
+
+:root {
+   --main: #13293d;
+   --white: #e3e3e3;
+   --gray: #8f8f8f;
+   --lightgray: #d5d5d5;
+   --text: #1b1b1b;
+   --green: #157f1f;
+}
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+html,
+body {
+   max-width: 100vw;
+   overflow-x: hidden;
+}
+
+body {
+   background-color: var(--white);
+   color: var(--main);
+}
+
+body,
+input,
+textarea,
+button {
+   font: 400 1rem Montserrat, sans-serif;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}

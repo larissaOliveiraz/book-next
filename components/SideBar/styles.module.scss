@@ -1,0 +1,96 @@
+.container {
+   width: 0;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+
+   background-color: var(--main);
+   z-index: 99;
+
+   transition: all ease 0.2s;
+
+   border-top-left-radius: 0.5rem;
+   border-bottom-left-radius: 0.5rem;
+   overflow: hidden;
+}
+
+.contentContainer {
+   height: 100%;
+
+   padding: 1.5rem;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: var(--white);
+   padding-bottom: 1.5rem;
+
+   border-bottom: 2px solid rgba(226, 226, 226, 0.15);
+}
+
+.loginArea {
+}
+
+.userInfo {
+   strong {
+      font-size: 1.75rem;
+   }
+}
+
+.closeBtn {
+}
+
+.menuArea {
+   height: calc(100vh - 5rem);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.menu {
+   flex: 1;
+}
+
+.menuItem {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   color: var(--white);
+
+   border-bottom: 2px solid rgba(226, 226, 226, 0.15);
+   padding: 1.25rem;
+
+   p {
+      font-size: 1rem;
+   }
+}
+
+.logoutBtn {
+   margin: 1rem 0;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   color: var(--white);
+
+   padding: 1.25rem 0;
+
+   p {
+      font-size: 1.15rem;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   .contentContainer {
+      height: 100%;
+      margin: 2.5rem;
+   }
+
+   .menuItem {
+      p {
+         font-size: 1.15rem;
+      }
+   }
+}

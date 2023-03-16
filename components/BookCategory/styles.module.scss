@@ -1,0 +1,60 @@
+.container {
+   margin-top: 2rem;
+
+   h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+   }
+}
+
+.books {
+   display: inline-block;
+   overflow: auto;
+   white-space: nowrap;
+   width: 100%;
+
+   &::-webkit-scrollbar {
+      display: none;
+   }
+}
+
+.bookItem {
+   width: 6.5rem;
+   height: 9.5rem;
+   display: inline-block;
+   border-radius: 0.5rem;
+   overflow: hidden;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+   img {
+      width: 100%;
+      height: 100%;
+   }
+
+   & + .bookItem {
+      margin-left: 0.5rem;
+   }
+
+   transition: all ease 0.2s;
+   &:hover {
+      filter: brightness(0.8);
+   }
+
+   @media (min-width: 768px) and (max-width: 1024px) {
+      width: 7.5rem;
+      height: 10.5rem;
+
+      & + .bookItem {
+         margin-left: 1rem;
+      }
+   }
+
+   @media (min-width: 1024px) {
+      width: 9rem;
+      height: 13rem;
+
+      & + .bookItem {
+         margin-left: 1rem;
+      }
+   }
+}
