@@ -1,10 +1,7 @@
-import { OrderContext } from "@/contexts/OrderContext";
-import { useRouter } from "next/router";
-import { useContext, useEffect, useState } from "react";
 import { Button } from "../Button";
 import { useSession, signIn, signOut } from "next-auth/react";
 import styles from "./styles.module.scss";
-import { Heart, Home, LogOut, Scroll, X } from "lucide-react";
+import { Home, LogOut, Scroll, X } from "lucide-react";
 import Link from "next/link";
 
 type Props = {

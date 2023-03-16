@@ -1,5 +1,3 @@
-import { Address } from "@/types/Address";
-import { CartItem } from "@/types/CartItem";
 import { Logged } from "@/types/Login";
 import { Order } from "@/types/Order";
 import { Orders } from "@/types/Orders";

@@ -1,12 +1,7 @@
-import { Address } from "@/types/Address";
 import { Book } from "@/types/Book";
 import { CartCookie } from "@/types/CartCookie";
 import { CartItem } from "@/types/CartItem";
-import { Order } from "@/types/Order";
-import { Addresses } from "@/utils/Adresses";
 import { Books } from "@/utils/Books";
-import { Orders } from "@/utils/Orders";
-import { useState } from "react";
 
 export const useApi = () => {
    const books: Book[] = Books;

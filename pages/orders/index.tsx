@@ -4,7 +4,6 @@ import { OrderContext } from "@/contexts/OrderContext";
 import { useFormatter } from "@/hooks/useFormatter";
 import { Order } from "@/types/Order";
 import { GetServerSideProps } from "next";
-import { getServerSession, Session } from "next-auth";
 import { getSession, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";

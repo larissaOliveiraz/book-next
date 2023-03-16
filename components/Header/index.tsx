@@ -1,10 +1,9 @@
-import { OrderContext } from "@/contexts/OrderContext";
 import { Menu, ShoppingCart } from "lucide-react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 import logoImg from "../../assets/logo-book.svg";
 import { Button } from "../Button";
 import { SideBar } from "../SideBar";

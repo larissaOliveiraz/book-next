@@ -1,4 +1,4 @@
-import { Minus, Plus, Smartphone } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
