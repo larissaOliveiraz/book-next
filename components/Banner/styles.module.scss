@@ -7,8 +7,8 @@
 }
 
 .swiper {
-   width: 300%;
-   animation: slide 10s infinite;
+   width: 100%;
+   // animation: slide 10s infinite;
 }
 
 .swiperSlide {
@@ -25,26 +25,26 @@
    }
 }
 
-@keyframes slide {
-   16% {
-      margin-left: 0;
-   }
-   33% {
-      margin-left: -100%;
-   }
-   50% {
-      margin-left: -100%;
-   }
-   66% {
-      margin-left: -200%;
-   }
-   82% {
-      margin-left: -200%;
-   }
-   100% {
-      margin-left: 0;
-   }
-}
+// @keyframes slide {
+//    16% {
+//       margin-left: 0;
+//    }
+//    33% {
+//       margin-left: -100%;
+//    }
+//    50% {
+//       margin-left: -100%;
+//    }
+//    66% {
+//       margin-left: -200%;
+//    }
+//    82% {
+//       margin-left: -200%;
+//    }
+//    100% {
+//       margin-left: 0;
+//    }
+// }
 
 @media (min-width: 1024px) {
    .swiperSlide {
