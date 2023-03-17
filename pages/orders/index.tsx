@@ -12,6 +12,7 @@ import styles from "../../styles/Orders.module.scss";
 
 const Orders = () => {
    const { getOrders } = useContext(OrderContext);
+   const [ordersData, setOrdersData] = useState<Order[]>();
 
    const formatter = useFormatter();
    const router = useRouter();
@@ -21,8 +22,6 @@ const Orders = () => {
       getOrders(orders);
       setOrdersData(orders);
    }, []);
-
-   const [ordersData, setOrdersData] = useState<Order[]>();
 
    const statusList = {
       preparing: {
