@@ -8,12 +8,12 @@ export const Banner = () => {
    return (
       <div className={styles.container}>
          <div className={styles.swiper}>
-            {/* <div className={styles.swiperSlide}>
-               <Image src={bookBgImg1} alt="" />
-            </div> */}
             <div className={styles.swiperSlide}>
-               <Image src={bookBgImg2} alt="" />
+               <Image src={bookBgImg1} alt="" />
             </div>
+            {/* <div className={styles.swiperSlide}>
+               <Image src={bookBgImg2} alt="" />
+            </div> */}
             {/* <div className={styles.swiperSlide}>
                <Image src={bookBgImg3} alt="" />
             </div> */}

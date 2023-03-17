@@ -20,7 +20,7 @@ const OrderInfo = ({ orderid }: OrderInfoProps) => {
 
    useEffect(() => {
       const orders: Order[] = [];
-      data?.user && getOrders(data.user.email as string, orders);
+      data?.user && getOrders(orders);
       setOrdersData(orders);
    }, []);
 

@@ -1,3 +1,4 @@
+import { Loader2 } from "lucide-react";
 import styles from "./styles.module.scss";
 
 type Props = {

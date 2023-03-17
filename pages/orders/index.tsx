@@ -12,19 +12,17 @@ import styles from "../../styles/Orders.module.scss";
 
 const Orders = () => {
    const { getOrders } = useContext(OrderContext);
-   const { data } = useSession();
-
-   const [ordersData, setOrdersData] = useState<Order[]>();
 
    const formatter = useFormatter();
    const router = useRouter();
 
    useEffect(() => {
-      const cookieOrders: Order[] = [];
-      data?.user && getOrders(data.user.email as string, cookieOrders);
-      setOrdersData(cookieOrders);
-      console.log(cookieOrders);
+      let orders: Order[] = [];
+      getOrders(orders);
+      setOrdersData(orders);
    }, []);
+
+   const [ordersData, setOrdersData] = useState<Order[]>();
 
    const statusList = {
       preparing: {

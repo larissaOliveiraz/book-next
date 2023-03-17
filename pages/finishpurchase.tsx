@@ -77,14 +77,14 @@ const FinishPurchase = ({ cart }: FinishPurchaseProps) => {
       };
 
       const orders: Order[] = [];
-      data?.user && getOrders(data.user.email as string, orders);
+      data?.user && getOrders(orders);
 
-      localStorage.setItem(
-         `orders:${data?.user && data.user.email}`,
-         JSON.stringify([
-            { id: data?.user?.email, ordersUser: [...orders, newOrder] },
-         ])
-      );
+      if (data?.user) {
+         localStorage.setItem(
+            `orders:${data.user.email}`,
+            JSON.stringify([...orders, newOrder])
+         );
+      }
 
       setCookie("cart", JSON.stringify([]));
       router.push("/orders");

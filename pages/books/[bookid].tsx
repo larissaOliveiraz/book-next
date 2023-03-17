@@ -50,7 +50,6 @@ const BookInfo = ({ book }: BookInfoProps) => {
       }
 
       setCookie("cart", JSON.stringify(cart));
-
       router.push("/cart");
    };
 

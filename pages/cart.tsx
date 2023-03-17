@@ -58,6 +58,10 @@ const Cart = ({ cart }: CartProps) => {
    //Order Info
    const [subtotal, setSubtotal] = useState(0);
 
+   const handleContinue = () => {
+      router.push("/finishpurchase");
+   };
+
    useEffect(() => {
       let countSub = 0;
       for (let i in cartData) {
@@ -137,10 +141,7 @@ const Cart = ({ cart }: CartProps) => {
          </div>
 
          <div className={styles.finishBtnArea}>
-            <Button
-               title="Continue"
-               onClick={() => router.push("/finishpurchase")}
-            />
+            <Button title="Continue" onClick={handleContinue} />
          </div>
       </div>
    );
